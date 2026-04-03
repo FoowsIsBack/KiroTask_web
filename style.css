@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 75px;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.nav_left > img{
+    height: 40px;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav_right > a{
+    text-decoration: none;
+    color: gray;
+}
+
+.nav_right > a:hover{
+    color: black;
+}
+
+.download{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.download:hover{
+    background-color: rgb(46, 45, 45);
+}
