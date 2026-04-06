@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
 .container{
@@ -33,7 +34,7 @@ body{
 
 .nav_right > a{
     text-decoration: none;
-    color: gray;
+    color: gray;    
 }
 
 .nav_right > a:hover{
@@ -53,4 +54,48 @@ body{
 
 .download:hover{
     background-color: rgb(46, 45, 45);
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13%;
+}
+
+h1{
+    font-size: 450%;
+}
+
+.bot_text{
+    color: #1ABC9C;
+    line-height: 1.2;
+}
+
+.mid_left > p{
+    margin-top: -5%;
+    color: gray;
+    font-size: larger;
+}
+
+.mid_right{
+    margin-right: 15%;
+}
+
+img[src="/image/1.png"] {
+    max-height: 800px;
+    width: auto;
+    object-fit: cover;
+}
+
+.download1{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    width: 30%;
 }
