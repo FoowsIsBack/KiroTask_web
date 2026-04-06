@@ -82,10 +82,14 @@ h1{
     margin-right: 15%;
 }
 
-img[src="/image/1.png"] {
+img[src="/image/1.png"]{
     max-height: 800px;
     width: auto;
     object-fit: cover;
+}
+
+img[src="/image/1.png"]:hover{
+    content: url("/image/2.png");
 }
 
 .download1{
