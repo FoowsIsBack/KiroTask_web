@@ -24,6 +24,7 @@ body{
 
 .nav_left > img{
     height: 40px;
+    cursor: pointer;
 }
 
 .nav_right{
@@ -103,3 +104,61 @@ img[src="/image/1.png"]:hover{
     padding: 15px 20px;
     width: 30%;
 }
+
+.download1:hover{
+    background-color: rgb(46, 45, 45);
+}
+
+.name{
+    color: gray;
+}
+
+dialog::backdrop{    
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    opacity: 0.80;
+}
+
+dialog{
+    width: 20%;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: #f3e8ff;
+}
+
+.dev_name img{
+    height: 60px;
+}
+
+.dialog_logo{
+    text-align: center;
+}
+
+.version_app{
+    color: gray;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.closer{
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"]{
+    width: 40%;
+    margin-top: 3px;
+}
+
+.dev_name h2{
+    text-align: center;
+}
+
+.dev_name a{
+    text-decoration: none;
+}
+
+.dev_name a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
