@@ -1,7 +1,6 @@
 const text = "KiroTask";
 let index = text.length;
 let isDeleting = false;
-
 const el = document.getElementById("typingText");
 el.textContent = text;
 
@@ -20,8 +19,8 @@ function loop() {
         setTimeout(loop, 80);
     } else {
         isDeleting = false;
-        index = 0; // ✅ reset to 0 before typing
-        setTimeout(typeAgain, 300); // ✅ slight delay before retyping
+        index = 0;
+        setTimeout(typeAgain, 300);
     }
 }
 
@@ -29,9 +28,9 @@ function typeAgain() {
     if (index < text.length) {
         el.textContent = text.substring(0, index + 1);
         index++;
-        setTimeout(typeAgain, 150);
+        setTimeout(typeAgain, 100);
     } else {
-        index = text.length; // ✅ reset to full length before deleting again
+        index = text.length;
         setTimeout(loop, 2000);
     }
 }

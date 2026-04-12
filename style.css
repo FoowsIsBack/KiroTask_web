@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
@@ -25,6 +24,11 @@ body.loaded{
 }
 
 .menu{
+    margin-bottom: 3%;
+    height: 90vh;
+}
+
+.menu2{
     margin-bottom: 3%;
 }
 
@@ -102,11 +106,12 @@ h1{
 .mid_left > p{
     margin-top: -3%;
     color: gray;
-    font-size: larger;
-    width: 56%;
+    font-size: x-large;
+    width: 80%;
 }
 
 .mid_right{
+    margin-top: 3%;
     margin-right: 15%;
     position: relative;
     display: inline-block;
@@ -212,10 +217,11 @@ button[type="submit"]{
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(800deg, #f5f7fa, #c3cfe2);
+    background-color: white;
 }
 
 .container2{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -299,3 +305,4 @@ img[src="/icons/sync_cloud.webp"]{
     content: "|";
     animation: blink 0.7s infinite;
 }
+
