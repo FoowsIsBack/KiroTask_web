@@ -289,3 +289,7 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
     content: "|";
     animation: blink 0.7s infinite;
 }
+
+#about{
+    scroll-margin-top: 80px;
+}
