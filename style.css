@@ -3,6 +3,16 @@ body{
     padding: 0;
     font-family: sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body.loaded{
+    opacity: 1;
 }
 
 .container{
@@ -12,6 +22,10 @@ body{
     justify-content: space-between;
     padding: 0 5%;
     height: 75px;
+}
+
+.menu{
+    margin-bottom: 3%;
 }
 
 .nav_left{
@@ -35,7 +49,8 @@ body{
 
 .nav_right > a{
     text-decoration: none;
-    color: gray;    
+    color: gray;
+    transition: color 0.2s ease-in-out;
 }
 
 .nav_right > a:hover{
@@ -51,6 +66,7 @@ body{
     font-weight: bold;
     font-size: 14px;
     padding: 12px 20px;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .download:hover{
@@ -71,26 +87,53 @@ h1{
 .bot_text{
     color: #1ABC9C;
     line-height: 1.2;
+    display: inline-block;
+}
+
+.bot_text::after{
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    50% {opacity: 0;}
 }
 
 .mid_left > p{
-    margin-top: -5%;
+    margin-top: -3%;
     color: gray;
     font-size: larger;
+    width: 56%;
 }
 
 .mid_right{
     margin-right: 15%;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
 }
 
-img[src="/image/1.png"]{
+.mid_right img{
     max-height: 800px;
     width: auto;
     object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
 }
 
-img[src="/image/1.png"]:hover{
-    content: url("/image/2.png");
+.mid_right .hover_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.mid_right:hover .default_img{
+    opacity: 0;
+}
+
+.mid_right:hover .hover_img{
+    opacity: 1;
 }
 
 .download1{
@@ -102,7 +145,8 @@ img[src="/image/1.png"]:hover{
     font-weight: bold;
     font-size: 18px;
     padding: 15px 20px;
-    width: 30%;
+    width: 23%;
+    transition: background 0.2s ease-in-out;
 }
 
 .download1:hover{
@@ -123,6 +167,7 @@ dialog{
     border-radius: 10px;
     border: 2px solid black;
     background: #f3e8ff;
+    text-align: left;
 }
 
 .dev_name img{
@@ -162,3 +207,95 @@ button[type="submit"]{
     text-decoration: underline;
 }
 
+.container{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(800deg, #f5f7fa, #c3cfe2);
+}
+
+.container2{
+    text-align: center;
+}
+
+.container2 h1{
+    font-size: 230%;
+}
+
+.container2 p{
+    color: gray;
+    margin-top: -10px;
+    font-size: 130%;
+}
+
+.container3{
+    width: 36%;
+    margin-left: 32%;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 4%;
+}
+
+img[src="/icons/list.webp"]{
+    margin-top: 6%;
+    width: 8%;
+    background-color: rgba(167, 163, 163, 0.685);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+img[src="/icons/notification-bell.webp"]{
+    margin-top: 6%;
+    width: 8%;
+    background-color: rgba(167, 163, 163, 0.685);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+img[src="/icons/sync_cloud.webp"]{
+    margin-top: 6%;
+    width: 8%;
+    background-color: rgba(167, 163, 163, 0.685);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.smart, .smart_reminders, .sync_everywhere{
+    border: 1px solid rgb(116, 114, 114);
+    border-radius: 10px;
+    width: 25%;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.smart:hover, .smart_reminders:hover, .sync_everywhere:hover{
+    background: rgba(59, 130, 246, 0.08);
+}
+
+.smart, .smart_reminders, .sync_everywhere{
+    transition: 0.3s ease;
+}
+
+.container5{
+    margin-left: 5%;
+}
+
+.container5 p{
+    margin-top: 3%;
+    line-height: 1.4;
+}
+
+#typingText{
+    display: inline-block;
+    transition: opacity 0.4s ease;
+}
+
+#typingText::after{
+    content: "|";
+    animation: blink 0.7s infinite;
+}

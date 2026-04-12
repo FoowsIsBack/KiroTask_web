@@ -36,33 +36,61 @@
             </div>
 
             <div class="nav_right">
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <button class="download">Download</button>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <button class="download">Download for Android</button>
             </div>
         </div>
 
 
-        <div class="container1">
+        <div class="container1" id="about">
             <div class="mid_left">
-                <h1>Organize Your Life <br>with<span class="bot_text"> KiroTask</span></h1>
-                <p>The simple yet powerful task manager that helps you stay on top of <br>everything. Plan, track, and accomplish your goals effortlessly.</p>
-                <button class="download1">Download Now</button>
+                <h1>Organize Your Life <br>with <span class="bot_text" id="typingText">KiroTask</span></h1>
+                <p>The simple yet powerful task manager that helps you stay on top of everything. Plan, track, and accomplish your goals effortlessly.</p>
+                <button class="download1">Download for Android</button>
             </div>
             <div class="mid_right">
-                <img src="/image/1.png" class="UI">
+                <img src="/image/1.png" alt="UI" class="default_img">
+                <img src="/image/2.png" alt="UI" class="hover_img">
             </div>
         </div>
 
         <div class="container2">
-            
+            <h1>Everything You Need to Stay Organized</h1>
+            <div class="container3">
+                <p>Powerful features designed to help you manage tasks, stay focused, and achieve more every day.</p>
+            </div>
+
+            <div class="container4" id="features">
+                <div class="smart">
+                    <div class="container5">
+                        <img src="/icons/list.webp" alt="features_icon">
+                        <h3>Smart Organization</h3>
+                        <p>Create lists, add tags, and categorize tasks to keep everything perfectly organized.</p>
+                    </div>
+                </div>
+                <div class="smart_reminders">
+                    <div class="container5">
+                        <img src="/icons/notification-bell.webp" alt="features_icon">
+                        <h3>Smart Reminders</h3>
+                        <p>Never miss a deadline with customizable notifications and intelligent reminders.</p>                        
+                    </div>
+                </div>
+                <div class="sync_everywhere">
+                    <div class="container5">
+                        <img src="/icons/sync_cloud.webp" alt="features_icon">
+                        <h3>Sync Everywhere</h3>
+                        <p>Access your tasks on any device with real-time cloud synchronization.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
+    <script src="script.js" defer></script>
+    <script src="/typingText.js"></script>
+    <script src="/loading.js"></script>
 
-
-
-    <script src="script.js"></script>
 </body>
 </html>
