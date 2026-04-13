@@ -9,39 +9,39 @@
 </head>
 <body>
 
-    <div class="menu">
-        <div class="container">
-            <div class="nav_left">
-                <img id="dialog_photo" src="/icons/KiroTask.png" alt="logo">
-                <p>KiroTask</p>
-            </div>
 
-            <div class="dev_name">
-                <dialog id="myDialog">
-                    <form method="dialog">
-                        <div class="dialog_logo">
-                            <img src="/icons/KiroTask.png" alt="logo">
-                        </div>
-                        <h2>KiroTask</h2>                        
-                        <p class="version_app">Version 1.0.0</p>
-                        <hr>   
-                        <p><b>Developer:</b> <span class="name">Dave Bangcoyo</span></p>
-                        <p><b>Facebook:</b> <a href="https://www.facebook.com/jhinbangcoyo" target="_blank" rel="noopener noreferrer">Visit Profile</a></p>
-                        <hr>
-                        <div class="closer">
-                            <button type="submit" class="download">Close</button>
-                        </div>                        
-                    </form>                    
-                </dialog>
-            </div>
-
-            <div class="nav_right">
-                <a href="#features">Features</a>
-                <a href="#about">About</a>
-                <button class="download">Download for Android</button>
-            </div>
+    <div class="container">
+        <div class="nav_left">
+            <img id="dialog_photo" src="/icons/KiroTask.png" alt="logo">
+            <p>KiroTask</p>
         </div>
 
+        <div class="nav_right">
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <button class="download">Download for Android</button>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="dev_name">
+            <dialog id="myDialog">
+                <form method="dialog">
+                    <div class="dialog_logo">
+                        <img src="/icons/KiroTask.png" alt="logo">
+                    </div>
+                    <h2>KiroTask</h2>                        
+                    <p class="version_app">Version 1.0.0</p>
+                    <hr>   
+                    <p><b>Developer:</b> <span class="name">Dave Bangcoyo</span></p>
+                    <p><b>Facebook:</b> <a href="https://www.facebook.com/jhinbangcoyo" target="_blank" rel="noopener noreferrer">Visit Profile</a></p>
+                    <hr>
+                    <div class="closer">
+                        <button type="submit" class="download">Close</button>
+                    </div>                        
+                </form>                    
+            </dialog>
+        </div>
 
         <div class="container1" id="about">
             <div class="mid_left">
@@ -86,8 +86,38 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container6">
+                <div class="pin_tasks">
+                    <div class="container5">
+                        <img src="/icons/plus.svg" alt="features_icon">
+                        <h3>Pin & prioritize tasks</h3>
+                        <p>Pin important tasks to keep them at the top. Pinned tasks always appear before unpinned ones regardless of done status.</p>
+                    </div>
+                </div>
+                <div class="switch_mode">
+                    <div class="container5">
+                        <img src="/icons/switch_mode.svg" alt="features_icon">
+                        <h3>Light & dark mode</h3>
+                        <p>Switch between light and dark themes anytime. Your preference is saved locally and applied on every launch.</p>
+                    </div>
+                </div>
+                <div class="local_storage">
+                    <div class="container5">
+                        <img src="/icons/database.svg" alt="features_icon">
+                        <h3>Local storage & undo</h3>
+                        <p>All tasks are saved on-device using SharedPreferences. Accidentally deleted a task? Undo it instantly via the snackbar.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <footer>
+        <div class="footer_container">
+            <p>© 2026 KiroTask. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="/javascript/loading.js"></script>
     <script src="/javascript/script.js"></script>
