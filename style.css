@@ -25,7 +25,7 @@ body.loaded{
 
 .menu{
     margin-bottom: 3%;
-    height: 90vh;
+    min-height: 100vh;
 }
 
 .menu2{
@@ -152,6 +152,7 @@ h1{
     padding: 15px 20px;
     width: 23%;
     transition: background 0.2s ease-in-out;
+    min-width: 150px;
 }
 
 .download1:hover{
@@ -304,6 +305,7 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
 
 #features{
     scroll-margin-top: 340px;
+    scroll-margin-top: 120px;
 }
 
 .container6{
@@ -317,4 +319,94 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
     border-top: 1px solid gray;
     padding: 25px;
     margin-top: 7%;
+}
+
+@media (max-width: 768px){
+
+    .nav_right{
+        display: none;
+    }
+
+    .nav_left{
+        width: 80%;
+    }
+
+    .container{
+        padding: 0 3%;
+    }
+
+    .container1{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 250%;
+    }
+
+    .mid_left p{
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .download1{
+        margin-top: 5%;
+        width: 60%;
+    }
+
+    .mid_right{
+        margin: 0;
+    }
+
+    .mid_right img{
+        max-height: 400px;
+    }
+
+    .container3{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .container4, .container6{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .smart, .smart_reminders, .sync_everywhere, .pin_tasks, .switch_mode, .local_storage{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    img[src*="/icons/"]{
+        width: 15%;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .container1{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .download1{
+        margin-top: 5%;
+    }
+
+    .mid_left p{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container4, .container6{
+        flex-wrap: wrap;
+    }
+
+    .smart, .smart_reminders, .sync_everywhere, .pin_tasks, .switch_mode, .local_storage{
+        margin-top: 3%;
+        width: 45%;
+    }
 }
