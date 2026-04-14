@@ -382,6 +382,29 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
     img[src*="/icons/"]{
         width: 15%;
     }
+
+    dialog{
+        width: 90%;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .dev_name img{
+        height: 50px;
+    }
+
+    .dev_name h2{
+        font-size: 20px;
+    }
+
+    .version_app{
+        font-size: 14px;
+    }
+
+    button[type="submit"]{
+        width: 70%;
+    }
+
 }
 
 @media (max-width: 1024px){
@@ -409,4 +432,9 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
         margin-top: 3%;
         width: 45%;
     }
+
+    dialog{
+        max-width: 420px;
+    }
+
 }
