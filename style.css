@@ -271,8 +271,23 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 
+.container4, .container6 p{
+    cursor: default;
+}
+
+.container4, .container6 h3{
+    cursor: default;
+}
+
+.smart, .smart_reminders, .sync_everywhere, .pin_tasks, .switch_mode, .local_storage{
+    transition: all 0.3s ease;
+}
+
+
 .smart:hover, .smart_reminders:hover, .sync_everywhere:hover, .pin_tasks:hover, .switch_mode:hover, .local_storage:hover{
     background: rgba(59, 130, 246, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .smart, .smart_reminders, .sync_everywhere, .pin_tasks, .switch_mode, .local_storage{
