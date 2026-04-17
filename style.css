@@ -444,7 +444,7 @@ img[src="/icons/calendar.svg"], img[src="/icons/pen.svg"], img[src="/icons/check
 
     .smart, .smart_reminders, .sync_everywhere, .pin_tasks, .switch_mode, .local_storage{
         margin-top: 3%;
-        width: 45%;
+        width: 80%;
     }
 
     dialog{
